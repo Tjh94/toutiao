@@ -46,6 +46,7 @@
   2. 通过点赞的状态来确定点赞数字的+1 或者 -1
   3. 根据点赞状态的不同，来修改点赞图标样式
 */
+
 import { addCommentLikeAPI, deleteCommentLikeAPI } from '../../../api/index.js'
 export default {
   name: 'CommentItem',

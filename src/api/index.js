@@ -1,11 +1,12 @@
 // api接口统一导出文件
 
-import { login, getSmsCode, getUserInfo, getUserChannels, addFollow, deleteFollow, getUserProfile } from './user.js'
+import { login, getSmsCode, getUserInfo, getUserChannels, addFollow, deleteFollow, getUserProfile, updateUserProfile, updateUserPhoto } from './user.js'
 import { getArticles, getArticleById, addCollect, deleteCollect, addLike, deleteLike } from './article.js'
 import { getAllChannels, addUserChannel, deleteUserChannel } from './channel.js'
 import { getSearchSuggestions, getSearchResult } from './search.js'
 import { getComments, addCommentLike, deleteCommentLike, addComment } from './comment.js'
 
+export const updateUserPhotoAPI = updateUserPhoto
 export const loginAPI = login
 export const getSmsCodeAPI = getSmsCode
 export const getUserInfoAPI = getUserInfo
@@ -28,3 +29,4 @@ export const addCommentLikeAPI = addCommentLike
 export const deleteCommentLikeAPI = deleteCommentLike
 export const addCommentAPI = addComment
 export const getUserProfileAPI = getUserProfile
+export const updateUserProfileAPI = updateUserProfile

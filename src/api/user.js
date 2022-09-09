@@ -79,3 +79,27 @@ export const getUserProfile = () => request({
   method: 'GET',
   url: '/v1_0/user/profile'
 })
+
+/**
+ * 更新用户信息
+ *
+ * @params name 昵称
+ * @params gender 性别 ，0-男，1-女
+ * @params birthday 生日 格式'2018-12-20'
+ */
+export const updateUserProfile = data => request({
+  method: 'PATCH',
+  url: '/v1_0/user/profile',
+  data
+})
+
+/**
+ * 更新用户头像
+ *
+ * @params photo 头像图片 file
+ */
+export const updateUserPhoto = data => request({
+  method: 'PATCH',
+  url: '/v1_0/user/photo',
+  data
+})
